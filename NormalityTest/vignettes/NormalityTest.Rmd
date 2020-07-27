@@ -1,0 +1,57 @@
+---
+title: "Vignette of NormalityTest"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{my1pkg}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.width=7,
+  fig.align='center'
+)
+```
+
+```{r packages, include=FALSE}
+library(NormalityTest)
+```
+
+## Introduction
+
+`NormalityTest` is my personal package. It contains one handy function that I find personally very useful!
+
+First, install and load the package, then follow this tutorial to get used to the different functionalities of this wonderful package!
+  
+## Example 1 
+  
+Si vous voulez effectuer un test de normalité pour les variables numériques d'un dataframe vous pouvez entrer le code ci-après.
+l'option output permet de specifier le genre de sortie que vous voulez.
+output="all" inclut toute les sorties possible
+
+```{r} 
+normality.df(diamonds2, output = "all")
+```
+
+## Example 2 
+
+Si vous voulez uniquement les graphes, faites ceci 
+
+```{r} 
+normality.df(diamonds2, output = "figure")
+```
+
+## Example 3
+
+Si vous voulez uniquement un résumé écris des résultats, faites ceci 
+
+```{r} 
+normality.df(diamonds2, output = "message")
+```
+
+
+
+

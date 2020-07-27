@@ -1,0 +1,25 @@
+Package: NormalityTest
+Title: Test de normalité
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Trudel",
+           family = "NGUEPI",
+           role = c("aut", "cre"),
+           email = "nguepi45@gmail.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Permet de faire le test de normalité pour des variables numérique
+             d'un data frame avec possibilité d'afficher l'histogramme et le nuage de points de 
+             normalité ainsi que la droite.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
+Imports: 
+    ggplot2 (>= 3.3.2)
+Depends: 
+    R (>= 2.10)
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
